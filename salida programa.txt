@@ -1,0 +1,80 @@
+=== COSMOLOGICAL ANALYSIS: Brans-Dicke vs ΛCDM (FINAL) ===
+✓ Created directory: brans.dicke/figures
+✓ Created directory: brans.dicke/tables
+✓ Created directory: brans.dicke/data_curves
+✓ Created directory: brans.dicke/data_observations
+✓ Created directory: brans.dicke/statistical_analysis
+
+=== COSMOLOGICAL PARAMETERS ===
+H0: 70.0
+Omega_m0: 0.3
+Omega_DE0: 0.7
+w0: -1.0
+c: 299792.458
+
+======================================================================
+STARTING COSMOLOGICAL ANALYSIS PIPELINE
+======================================================================
+✓ Loaded Pantheon data: 28 points
+
+=== STATISTICAL ANALYSIS ===
+Calculating ΛCDM...
+ΛCDM: χ² = 5.69, χ²_reduced = 0.219
+
+Calculating Brans-Dicke...
+--------------------------------------------------
+  Processing ω = 10...
+ω =    10: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 50...
+ω =    50: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 100...
+ω =   100: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 500...
+ω =   500: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 1000...
+ω =  1000: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 2000...
+ω =  2000: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 5000...
+ω =  5000: χ² =    5.62, χ²_reduced = 0.216
+  Processing ω = 10000...
+ω = 10000: χ² =    5.62, χ²_reduced = 0.216
+
+==================================================
+BEST FIT: ω = 10
+Δχ² (BD - ΛCDM) = -0.069
+==================================================
+
+=== GENERATING ANALYSIS PLOTS ===
+
+✓ Analysis plots generated and saved in brans.dicke/figures/
+
+=== EXPORTING DATA ===
+✓ Cosmological parameters saved
+✓ Observational data saved
+✓ Theoretical curves saved
+✓ Statistical results saved
+✓ Best fit summary saved
+
+======================================================================
+ANALYSIS COMPLETED SUCCESSFULLY
+======================================================================
+
+📊 FINAL RESULTS SUMMARY:
+ΛCDM: χ² = 5.69, χ²_reduced = 0.219
+Brans-Dicke (best ω=10): χ² = 5.62
+Δχ² = -0.069
+🎯 CONCLUSION: Brans-Dicke provides BETTER fit than ΛCDM
+
+📁 GENERATED FILE STRUCTURE in brans.dicke/:
+brans.dicke/
+├── figures/comprehensive_analysis.png/.pdf
+├── tables/cosmological_parameters.csv
+├── data_observations/observational_data.csv
+├── data_curves/theoretical_curves.csv
+└── statistical_analysis/
+    ├── statistical_results.csv
+    └── best_fit_summary.csv
+
+📍 Access your files at: http://localhost:8889/tree/brans.dicke
+======================================================================
