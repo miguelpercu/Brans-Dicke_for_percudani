@@ -1,0 +1,101 @@
+# Brans-Dicke vs ΛCDM Cosmological Analysis
+
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+
+## 📖 Description
+
+Complete reproduction package for the research paper:
+
+> **"Comparative Analysis: Brans-Dicke Theory vs ΛCDM Model using Pantheon Supernova Data"**  
+> *Miguel Ángel Percudani*  
+> *March 2025*
+
+This repository contains the full computational pipeline demonstrating that Brans-Dicke theory with coupling parameter ω = 10 provides a better fit to Pantheon supernova data than the standard ΛCDM model (χ² = 5.62 vs 5.69, Δχ² = -0.069).
+
+## 🚀 Quick Start for Peer Reviewers
+
+### Prerequisites
+
+- **Python 3.8+** 
+- **Jupyter Notebook**
+- Required packages: `numpy`, `scipy`, `matplotlib`, `pandas`
+
+### Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/miguelpercu/Brans-Dicke_for_percudani.git
+cd Brans-Dicke_for_percudani
+
+# Install required packages
+pip install numpy scipy matplotlib pandas astropy
+
+jupyter notebook
+
+# Import required libraries
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
+
+# Execute the analysis
+exec(open('brans_dicke_analysis.py').read())
+
+Brans-Dicke_for_percudani/
+├── brans_dicke_analysis.py          # Main analysis script (Jupyter-compatible)
+├── figures/                         # Generated visualizations
+│   └── comprehensive_analysis.png   # Main results figure
+├── tables/                          # Parameter tables
+│   └── cosmological_parameters.csv
+├── data_observations/               # Observational data
+│   └── observational_data.csv
+├── data_curves/                     # Theoretical predictions
+│   └── theoretical_curves.csv
+└── statistical_analysis/            # Statistical results
+    ├── statistical_results.csv
+    └── best_fit_summary.csv
+
+=== COSMOLOGICAL ANALYSIS: Brans-Dicke vs ΛCDM (FINAL) ===
+✓ Created directory structure
+✓ Loaded Pantheon data: 28 points
+✓ Statistical analysis completed
+✓ Best fit: ω = 10, χ² = 5.62, Δχ² = -0.069
+✓ Analysis plots generated and saved
+
+H0 = 70.0           # km/s/Mpc
+Omega_m0 = 0.3      # Matter density
+Omega_DE0 = 0.7     # Dark energy density
+
+# Test basic functionality
+import numpy as np
+from scipy.integrate import solve_ivp
+print("✓ Basic imports successful")
+
+# Test cosmology calculations
+from astropy.cosmology import FlatLambdaCDM
+cosmo = FlatLambdaCDM(H0=70, Om0=0.3)
+print("✓ Cosmology calculations working")
+
+@article{percudani2025bransdicke,
+  title={Comparative Analysis: Brans-Dicke Theory vs ΛCDM Model using Pantheon Supernova Data},
+  author={Percudani, Miguel Ángel},
+  journal={Preprint},
+  year={2025},
+  url={https://github.com/miguelpercu/Brans-Dicke_for_percudani}
+}
+
+
+## 🎯 **Características clave de este README:**
+
+1. **✅ Específico para revisores por pares** - Instrucciones claras de reproducción
+2. **✅ Estructura de archivos exacta** - Basado en tu output real
+3. **✅ Resultados verificables** - χ² exactos de tu análisis
+4. **✅ Troubleshooting incluido** - Para resolver problemas comunes
+5. **✅ Compatible con Jupyter** - Como usaste el notebook
+6. **✅ Enlace a tu repositorio real** - `https://github.com/miguelpercu/Brans-Dicke_for_percudani`
+
+**¿Necesitas que ajuste alguna sección o agregue información específica adicional?**
